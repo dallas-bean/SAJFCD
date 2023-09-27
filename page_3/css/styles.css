@@ -42,6 +42,31 @@ body {
 
 }
 
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;    
+    scroll-behavior: smooth;
+}
+
+.background-color {
+    margin: 0 auto;
+    width: 59%;
+    background-color: whitesmoke;
+    opacity: 87%;
+}
+
+
+table {
+    overflow-x: scroll;
+    position:sticky;
+    margin-top: 9%;
+}
+
+
 .headLine {
     width:50%;
     text-align: center;
