@@ -129,4 +129,8 @@ button {
         position: relative;
     }
 
+    .headLine {
+        width: 100%;
+    }
+
     }
