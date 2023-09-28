@@ -138,5 +138,8 @@ button {
     .dont-print:placeholder-shown {
         display: none;
     }
+    header {
+        position: relative;
+    }
 
     }
