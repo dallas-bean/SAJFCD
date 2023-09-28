@@ -23,22 +23,65 @@
             </header>
             <section>
                 <table>
-                <tr>
-                    <th class="underLine">Airport Identifier</th>
-                        <td><input type="text" class="dont-print" placeholder="ICAO"></td>
-                        <td><input type="text" class="dont-print" placeholder="ICAO"></td>
-                        <td><input type="text" class="dont-print" placeholder="ICAO"></td>
-                        <td><input type="text" class="dont-print" placeholder="ICAO"></td>
-                        <td><input type="text" class="dont-print" placeholder="ICAO"></td>
-                </tr>
-                <tr>
-                    <th class="underLine">ETA / ETD (All times in Zulu)</th>
-                        <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
-                        <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
-                        <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
-                        <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
-                        <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
-                </tr>
+                    <tr>
+                        <th class="underLine">Airport Identifier</th>
+                            <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                            <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                            <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                            <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                            <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                    </tr>
+                    <tr>
+                        <th class="underLine">ETA / ETD <i>(All times in Zulu)</i></th>
+                            <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
+                            <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
+                            <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
+                            <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
+                            <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
+                    </tr>
+                    <tr id="one" class="collapse">
+                        <th><i>Continued</i></th>
+                            <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                            <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                            <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                            <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                            <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                    </tr>
+                    <tr id="two" class="collapse">
+                        <th class="underLine"></th>
+                            <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
+                            <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
+                            <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
+                            <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
+                            <td><input type="text" class="dont-print" placeholder="ETA / ETD"></td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <button onclick="one(), two(), three(), four(), five()">Add legs</button>
+                            <script>
+                                function one() {
+                                    var element = document.getElementById('one');
+                                    element.classList.toggle("collapse");
+                                }
+                                function two() {
+                                    var element = document.getElementById('two');
+                                    element.classList.toggle("collapse");
+                                }
+                                function three() {
+                                    var element = document.getElementById('three');
+                                    element.classList.toggle("collapse");
+                                }
+                                function four() {
+                                    var element = document.getElementById('four');
+                                    element.classList.toggle("collapse");
+                                }
+                                function five() {
+                                    var element = document.getElementById('five');
+                                    element.classList.toggle("collapse");
+                                }
+                            </script>
+                        </th>
+                    </tr>
 <!-- CREWING -->
                 <tr>
                     <th class="underLine">Crew & C.A. Assignment</th>
@@ -129,7 +172,34 @@
                 </tr>
 
                 <tr>
-                    <th><em><a href="https://www.notams.faa.gov/dinsQueryWeb/" target="_blank">NOTAMs</a>?</em></th>
+                    <th class="underLine"><em><a href="https://www.notams.faa.gov/dinsQueryWeb/" target="_blank">NOTAMs</a>?</em></th>
+                    <td><textarea class="dont-print" cols="22" rows="5" placeholder="NOTAM #'s and details"></textarea></td>
+                    <td><textarea class="dont-print" cols="22" rows="5" placeholder="NOTAM #'s and details"></textarea></td>
+                    <td><textarea class="dont-print" cols="22" rows="5" placeholder="NOTAM #'s and details"></textarea></td>
+                    <td><textarea class="dont-print" cols="22" rows="5" placeholder="NOTAM #'s and details"></textarea></td>
+                    <td><textarea class="dont-print" cols="22" rows="5" placeholder="NOTAM #'s and details"></textarea></td>
+                </tr>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <tr id="three" class="collapse">
+                    <th class="underLine"><i>continued</i></th>
+                    <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                    <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                    <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                    <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                    <td><input type="text" class="dont-print" placeholder="ICAO"></td>
+                </tr>
+
+                <tr id="four" class="collapse">
+                    <th></th>
+                    <td><textarea cols="22" rows="5"></textarea></td>
+                    <td><textarea cols="22" rows="5"></textarea></td>
+                    <td><textarea cols="22" rows="5"></textarea></td>
+                    <td><textarea cols="22" rows="5"></textarea></td>
+                    <td><textarea cols="22" rows="5"></textarea></td>
+                </tr>
+
+                <tr id="five" class="collapse">
+                    <th class="underLine"></th>
                     <td><textarea class="dont-print" cols="22" rows="5" placeholder="NOTAM #'s and details"></textarea></td>
                     <td><textarea class="dont-print" cols="22" rows="5" placeholder="NOTAM #'s and details"></textarea></td>
                     <td><textarea class="dont-print" cols="22" rows="5" placeholder="NOTAM #'s and details"></textarea></td>
