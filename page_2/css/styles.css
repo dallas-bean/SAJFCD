@@ -30,6 +30,10 @@ body {
     }
 }
 
+.collapse {
+    display: none;
+}
+
 header {
     position: fixed;
     width: 100%;
